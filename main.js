@@ -15,11 +15,11 @@ const Person = (first, last, age = 0, married = false) => {
     },
 
     ageUp: function () {
-      return userInfo.age++
+      return this.age++
     },
 
     getFullName: function () {
-      return `${userInfo.firstName} ${userInfo.lastName}`
+      return `${this.firstName} ${this.lastName}`
     },
 
     marry: function (person) {
